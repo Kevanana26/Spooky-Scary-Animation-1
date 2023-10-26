@@ -17,7 +17,6 @@ box-sizing: border-box;
 background: #542f6f;
 }
 
-
 :after,
 :before{
     box-sizing: inherit;
@@ -61,7 +60,6 @@ background: #542f6f;
     right: -18px;
 }
 
-
 #spooky #body #eyes{
     display: flex;
     justify-content: space-between;
@@ -70,8 +68,6 @@ background: #542f6f;
     width: 90px;
     height: 20px;
 }
-
-
 
 #spooky #body #eyes:before,
 #spooky #body #eyes:after{
@@ -92,10 +88,8 @@ border-radius: 50%;
     border-bottom-right-radius: 30px;
 }
 
-
-
 #spooky #body #mouth:before{
-    content: ' ';
+    content: '';
     display: block;
     background: #fff;
     margin-left: 20px;
@@ -103,8 +97,7 @@ border-radius: 50%;
     height: 10px;
 }
 
-
-#spooky #body #feet{
+#spooky #body #feet {
     position: absolute;
     display: flex;
     bottom: -18px;
@@ -112,10 +105,9 @@ border-radius: 50%;
     height: 36px;
 }
 
-
 #spooky #body #feet > *,
-#spooky #body #feet:before,
-#spooky #body #feet:after{
+#spooky #body #feet::before,
+#spooky #body #feet::after {
     content: ' ';
     width: 36px;
     height: 36px;
@@ -126,5 +118,28 @@ border-radius: 50%;
 #shadow{
     margin: -90px auto 0;
     background: #252c49;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
 }
 
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}

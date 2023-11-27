@@ -34,7 +34,7 @@ background: #542f6f;
     margin: 50px auto 0;
     width: 180px;
     height: 220px;
-    background: #f2fbf1;
+    background: #a202ff;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
 }
@@ -48,7 +48,7 @@ background: #542f6f;
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #f2fbf1;
+    background: #a202ff;
     animation: floaty 2s infinite;
 }
 
@@ -75,12 +75,12 @@ content: ' ';
 display: block;
 width: 30px;
 height: 30px;
-background: #252c49;
+background: #e70505;
 border-radius: 50%;
 }
 
 #spooky #body #mouth{
-    background: #252c49;
+    background: #fa0101;
     margin: 25px auto 0;
     width: 60px;
     height: 30px;
@@ -91,7 +91,7 @@ border-radius: 50%;
 #spooky #body #mouth:before{
     content: '';
     display: block;
-    background: #fff;
+    background: goldenrod;
     margin-left: 20px;
     width: 10px;
     height: 10px;
@@ -111,7 +111,7 @@ border-radius: 50%;
     content: ' ';
     width: 36px;
     height: 36px;
-    background: #f2fbf1;
+    background: brown;
     border-radius: 50%;
 }
 
